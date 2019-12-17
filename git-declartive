@@ -3,10 +3,9 @@ pipeline{
    
    environment{
       PATH= "/opt/jdk1.8.0_231/bin:$PATH"
+      PATH1= "/opt/maven-3.3.9/bin:$PATH"
       }
-	  environment{
-      PATH= "/opt/maven-3.3.9/bin:$PATH"
-	  }
+	  
     stages{
 	  stage("git checkout"){
 	       steps{
