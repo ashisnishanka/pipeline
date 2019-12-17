@@ -1,12 +1,7 @@
 pipeline{
    agent any
    
-   environment{
-      PATH= "/opt/jdk1.8.0_231/bin:$PATH"
-      PATH1= "/opt/maven-3.3.9/bin:$PATH"
-      }
-	  
-    stages{
+   stages{
 	  stage("git checkout"){
 	       steps{
 		      git 'https://github.com/ashisnishanka/pipeline.git'
