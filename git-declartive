@@ -12,10 +12,13 @@ pipeline{
 		      git 'https://github.com/ashisnishanka/pipeline.git'
 			  }
 		}
-		stage("Maven Build"){
+		stage("Build")
+		{
 	       steps{
-		      sh "mvn compile"
-			  }
+		      sh ...
+		      "mvn compile"
+		      ...
+		    }
 		}
 	}
 }
